@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaigenAI Hub | Talenti GenAI in Europa</title>
+    <!-- Meta tags dal primo snippet -->
+    
+    <style>
+        /* Stili base */
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --accent: #38bdf8;
+        }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+        }
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            background-color: var(--dark);
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Call to Action Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .btn-secondary {
+            background-color: white;
+            color: var(--primary);
+            margin-left: 15px;
+        }
+        /* Features */
+        .features {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .feature {
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        /* Social Proof */
+        .social-proof {
+            background-color: #f1f5f9;
+            padding: 80px 0;
+            text-align: center;
+        }
+        /* Call to Action */
+        .cta {
+            padding: 100px 0;
+            text-align: center;
+            background-color: var(--primary);
+            color: white;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            .btn {
+                display: block;
+                margin: 10px auto;
+                max-width: 80%;
+            }
+            .btn-secondary {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>MaigenAI Hub</h2>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Trova i Migliori Talenti GenAI in Europa in 48 Ore</h1>
+            <p>MaigenAI connette aziende innovative con freelancer specializzati in AI generativa verificati e pronti a lavorare sui tuoi progetti</p>
+            <a href="#" class="btn">Trova Talenti GenAI</a>
+            <a href="#" class="btn btn-secondary">Sono un Freelancer</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Perché Scegliere MaigenAI Hub</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>48 Ore di Matching Garantito</h3>
+                    <p>Ti connettiamo con talenti GenAI verificati in solo 48 ore o il tuo primo mese è gratuito.</p>
+                </div>
+                <div class="feature">
+                    <h3>Verifica di Competenze AI Avanzata</h3>
+                    <p>Tutti i nostri freelancer superano test pratici di prompt engineering e sviluppo LLM.</p>
+                </div>
+                <div class="feature">
+                    <h3>Supporto Tecnico Illimitato</h3>
+                    <p>Un esperto GenAI dedicato ti aiuta a definire correttamente i requisiti del progetto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <div class="container">
+            <h2>Aziende che si Fidano di Noi</h2>
+            <p>Unisciti a decine di startup e aziende europee che hanno accelerato i loro progetti GenAI</p>
+            <!-- Qui puoi inserire loghi delle aziende o testimonial -->
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Pronto ad Accelerare il Tuo Progetto GenAI?</h2>
+            <p>Pubblica il tuo primo progetto gratuitamente e paga solo quando trovi il freelancer giusto</p>
+            <a href="#" class="btn">Inizia Ora - È Gratuito</a>
+        </div>
+    </section>
+
+    <script>
+        // Semplice script per tracciamento conversioni
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Qui puoi aggiungere il codice per tracciare i click
+                console.log('Button clicked:', this.textContent);
+                
+                // Google Analytics event (se hai GA)
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click', {
+                        'event_category': 'CTA',
+                        'event_label': this.textContent
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
